@@ -1,10 +1,3 @@
-/*
- * @Autor: ERP
- * @Email: 邮箱
- * @Description: 
- * @CreateDate: Do not edit
- * @LastEditors: houxinchao
- */
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *

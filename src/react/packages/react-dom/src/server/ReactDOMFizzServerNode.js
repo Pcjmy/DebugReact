@@ -94,7 +94,7 @@ function renderToPipeableStream(
         'error',
         createAbortHandler(
           request,
-          
+          // eslint-disable-next-line react-internal/prod-error-codes
           new Error('The destination stream errored while writing data.'),
         ),
       );
@@ -102,7 +102,7 @@ function renderToPipeableStream(
         'close',
         createAbortHandler(
           request,
-          
+          // eslint-disable-next-line react-internal/prod-error-codes
           new Error('The destination stream closed early.'),
         ),
       );

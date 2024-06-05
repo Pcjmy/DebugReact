@@ -2103,7 +2103,7 @@ function escapeJSStringsForInstructionScripts(input: string): string {
       case '\u2029':
         return '\\u2029';
       default: {
-        
+        // eslint-disable-next-line react-internal/prod-error-codes
         throw new Error(
           'escapeJSStringsForInstructionScripts encountered a match it does not know how to replace. this means the match regex and the replacement characters are no longer in sync. This is a bug in React',
         );

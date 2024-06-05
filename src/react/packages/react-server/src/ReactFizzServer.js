@@ -465,7 +465,7 @@ function logRecoverableError(request: Request, error: any): ?string {
   // so that someone fixes the error reporting instead of hiding it.
   const errorDigest = request.onError(error);
   if (errorDigest != null && typeof errorDigest !== 'string') {
-    
+    // eslint-disable-next-line react-internal/prod-error-codes
     throw new Error(
       `onError returned something with a type other than "string". onError should return a string and may return null or undefined but must not return anything else. It received something of type "${typeof errorDigest}" instead`,
     );

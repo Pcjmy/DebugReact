@@ -81,6 +81,7 @@ const defaultOnRecoverableError =
       reportError
     : (error: mixed) => {
         // In older browsers and test environments, fallback to console.error.
+        // eslint-disable-next-line react-internal/no-production-logging
         console['error'](error);
       };
 

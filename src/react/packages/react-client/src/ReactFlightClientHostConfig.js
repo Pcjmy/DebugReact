@@ -1,10 +1,3 @@
-/*
- * @Autor: ERP
- * @Email: 邮箱
- * @Description: 
- * @CreateDate: Do not edit
- * @LastEditors: houxinchao
- */
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -14,7 +7,7 @@
  * @flow
  */
 
-
+/* eslint-disable react-internal/prod-error-codes */
 
 // We expect that our Rollup, Jest, and Flow configurations
 // always shim this module with the corresponding host config

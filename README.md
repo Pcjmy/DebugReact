@@ -1,6 +1,6 @@
 # DebugReact
 
-React18.1.0
+React18.2.0
 
 ## 前言
 

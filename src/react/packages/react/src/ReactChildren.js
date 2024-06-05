@@ -138,6 +138,7 @@ function mapIntoArray(
             // $FlowFixMe Flow incorrectly thinks React.Portal doesn't have a key
             (mappedChild.key && (!child || child.key !== mappedChild.key)
               ? // $FlowFixMe Flow incorrectly thinks existing element's key can be a number
+                // eslint-disable-next-line react-internal/safe-string-coercion
                 escapeUserProvidedKey('' + mappedChild.key) + '/'
               : '') +
             childKey,
@@ -201,6 +202,7 @@ function mapIntoArray(
         );
       }
     } else if (type === 'object') {
+      // eslint-disable-next-line react-internal/safe-string-coercion
       const childrenString = String((children: any));
 
       throw new Error(

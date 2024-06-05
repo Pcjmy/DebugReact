@@ -1,10 +1,3 @@
-/*
- * @Autor: ERP
- * @Email: 邮箱
- * @Description: 
- * @CreateDate: Do not edit
- * @LastEditors: houxinchao
- */
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -14,7 +7,7 @@
  * @flow
  */
 
-
+// eslint-disable-next-line react-internal/prod-error-codes
 throw new Error(
   'This entry point is not yet supported outside of experimental channels',
 );

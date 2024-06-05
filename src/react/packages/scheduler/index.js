@@ -1,10 +1,3 @@
-/*
- * @Autor: ERP
- * @Email: 邮箱
- * @Description: 
- * @CreateDate: Do not edit
- * @LastEditors: houxinchao
- */
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -15,7 +8,6 @@
 'use strict';
 
 export * from './src/forks/Scheduler';
-// sy 添加以下
 export {
   unstable_flushAllWithoutAsserting,
   unstable_flushNumberOfYields,
@@ -27,4 +19,3 @@ export {
   unstable_advanceTime,
   unstable_setDisableYieldValue,
 } from "./src/forks/SchedulerMock";
-
