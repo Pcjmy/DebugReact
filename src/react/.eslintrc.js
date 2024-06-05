@@ -100,7 +100,7 @@ module.exports = {
     // 'no-for-of-loops/no-for-of-loops': ERROR,
 
     // Prevent function declarations after return statements
-    'no-function-declare-after-return/no-function-declare-after-return': ERROR,
+    // 'no-function-declare-after-return/no-function-declare-after-return': ERROR,
 
     // CUSTOM RULES
     // the second argument of warning/invariant should be a literal string
