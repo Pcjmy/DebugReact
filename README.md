@@ -1,5 +1,7 @@
 # DebugReact
 
+React18.1.0
+
 ## 前言
 
 本项目用于调试源码，即修改配置使得项目中引用的 react 包来自 src/react，使得我们可以在 src/react 下 debug 和打 log 调试。
