@@ -598,6 +598,8 @@ export function createFiberFromTypeAndProps(
     fiber._debugOwner = owner;
   }
 
+  console.log('fiber=', fiber);
+
   return fiber;
 }
 
