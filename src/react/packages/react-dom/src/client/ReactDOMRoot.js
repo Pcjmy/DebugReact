@@ -221,6 +221,7 @@ export function createRoot(
     }
   }
 
+  // 创建FiberRoot
   const root = createContainer(
     container,
     ConcurrentRoot,

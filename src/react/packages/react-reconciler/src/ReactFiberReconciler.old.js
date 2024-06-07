@@ -254,6 +254,7 @@ export function createContainer(
   onRecoverableError: (error: mixed) => void,
   transitionCallbacks: null | TransitionTracingCallbacks,
 ): OpaqueRoot {
+  // 服务端渲染相关
   const hydrate = false;
   const initialChildren = null;
   return createFiberRoot(
