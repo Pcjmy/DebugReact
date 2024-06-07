@@ -9,7 +9,7 @@ React18.2.0
 ## 使用步骤
 
 1. 在根目录下安装： yarn add
-2. 下载 react 包到 src 下，并按照下面的修改配置步骤修改 react 中的文件。
+2. 下载 react 包到 src 下，并按照下面的修改配置步骤修改 react 中的文件
 3. 在根目录下启动： yarn start
 
 ## 自己从 github 下载 react 包并修改配置
