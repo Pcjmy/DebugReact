@@ -138,7 +138,9 @@ export type SharedQueue<State> = {|
 
 export type UpdateQueue<State> = {|
   baseState: State,
+  // 单链表，firstBaseUpdate->...->lastBaseUpdate
   firstBaseUpdate: Update<State> | null,
+  // 一般情况下，单链表是不用记录尾节点，这里记录尾节点是为了快速比较两个单链表，用尾节点比较
   lastBaseUpdate: Update<State> | null,
   shared: SharedQueue<State>,
   effects: Array<Update<State>> | null,
@@ -165,6 +167,7 @@ if (__DEV__) {
   };
 }
 
+// 这里初始化fiber.updateQueue，在beginWork阶段，updateHostRoot中使用processUpdateQueue函数来再具体赋值
 export function initializeUpdateQueue<State>(fiber: Fiber): void {
   const queue: UpdateQueue<State> = {
     baseState: fiber.memoizedState,
