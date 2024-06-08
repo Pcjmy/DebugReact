@@ -9,7 +9,7 @@ import UseContextPage from "./pages/UseContextPage";
 // import UseMemoPage from "./pages/UseMemoPage";
 // import SuspensePage from "./custom/SuspensePage";
 
-import "./style.css";
+import "./UseContextPage.css";
 import "./index.css";
 
 // ReactDOM.render(jsx, document.getElementById("root"));
